@@ -1,0 +1,9 @@
+# IO
+nx.write_edgelist(G,'C:\data\geometric shortest path problem\RGG\RGG1.txt')
+G = nx.read_edgelist('C:\data\geometric shortest path problem\RGG\RGG1')
+
+
+with open('C:\data\geometric shortest path problem\RGG\RGG1POSITION.txt','w') as f:
+    f.write(json.dumps(pos1))
+with open('C:\data\geometric shortest path problem\RGG\RGG1POSITION', 'r') as f:
+    json_str = f.read()
